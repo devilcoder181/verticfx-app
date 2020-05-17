@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "verticfx-app"
+    }
+  },
+  "defaultProject": "verticfx-app",
+  "cli": {
+    "analytics": "74147780-2fdb-47ef-96a6-d90a518bfe48"
+  }
 }
