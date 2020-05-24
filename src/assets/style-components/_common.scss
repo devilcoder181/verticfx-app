@@ -1,0 +1,97 @@
+@import "mixin";
+
+.v_btn{
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  color: $color-white;
+  padding: 1em 2em;
+  border-radius: 2.5em;
+  font-size: 0.9vw;
+  font-weight: 600;
+
+  @media only screen and (max-width:1025px){
+    font-size: 14px;
+  }
+
+  @include p-gradient();
+
+  &:hover{
+    box-shadow: 1px 3px 20px #5187fb6b;
+  }
+}
+
+.w_btn_wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+// Image Controller
+
+.img_box{
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+
+  .img_{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
+// Custom Scrollbar
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5577ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($p-color-1, 10%);
+}
+
+
+// Section Controllers
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width:1024px) {
+      width: 100%;
+      max-width: 85%;
+  }
+
+  @media screen and (max-width:1024px) {
+      max-width: 90%;
+  }
+
+  @media screen and (max-width:767px) {
+      max-width: 95%;
+  }
+}
+
+.section-main{
+  position: relative;
+  padding: 10vh 0;
+
+  @media only screen and (max-width:1024px){
+    padding: 100px 0;
+  }
+}

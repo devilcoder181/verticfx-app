@@ -1,0 +1,79 @@
+@import "../../../assets/style-components/variables";
+@import "../../../assets/style-components/common";
+@import "../../../assets/style-components/mixin";
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5em 0;
+  transition: all 0.3s ease;
+  height: 100px;
+  z-index: 99;
+  .navbar_component{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+
+    .nav_logo{
+      display: inline-block;
+      height: 100%;
+      width: 20vw;
+      .nav_img{
+        position: relative;
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img{
+          height: 65%;
+        }
+      }
+    }
+
+    .nav_content{
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      nav{
+        position: relative;
+        display: block;
+        margin-right: 1em;
+        ul{
+          position: relative;
+          display: flex;
+          list-style: none;
+
+          li{
+            display: inline-block;
+            padding: 0 0.75em;
+            .nav_link{
+              position: relative;
+              display: inline-block;
+              transition: color 0.3s ease;
+              color: $color-text;
+              font-size: 1vw;
+              font-weight: 600;
+
+              @media only screen and (max-width:1024px){
+                font-size: 18px;
+              }
+
+              &:hover{
+                color: $p-color-1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

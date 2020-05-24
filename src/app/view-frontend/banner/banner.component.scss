@@ -1,0 +1,73 @@
+@import "../../../assets/style-components/variables";
+@import "../../../assets/style-components/common";
+@import "../../../assets/style-components/mixin";
+
+.banner-main-home{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  padding-top: 7vw;
+
+  @media only screen and (max-width:1024px){
+    padding-top: 80px;
+  }
+
+  .banner_wrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+
+    .banner_content{
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2em;
+      width: 50%;
+
+      h1{
+        display: block;
+        font-size: 3.25vw;
+        font-weight: 800;
+        line-height: 1;
+        margin: 0;
+
+        @media only screen and (max-width:1024px){
+          font-size: 42px;
+        }
+      }
+
+      .para_{
+        display: block;
+        font-size: 1.25vw;
+        line-height: 1.5;
+
+        @media only screen and (min-width:1025px){
+          width: 75%;
+        }
+
+        @media only screen and (max-width:1024px){
+          font-size: 18px;
+        }
+      }
+
+    }
+
+    .banner_img{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding: 0 4%;
+      .img_box{
+        padding-top: 90%;
+      }
+    }
+  }
+
+
+}

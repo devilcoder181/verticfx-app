@@ -1,0 +1,17 @@
+
+// Gradient Color Schemes
+
+@mixin p-gradient() {
+  background: rgb(64,213,230);
+  background: linear-gradient(145deg, rgba(64,213,230,1) 0%, rgba(85,119,255,1) 100%);
+}
+
+@mixin s-gradient() {
+  background: rgb(3,216,109);
+  background: linear-gradient(145deg, rgba(3,216,109,1) 0%, rgba(0,211,145,1) 100%);
+}
+
+@mixin t-gradient() {
+  background: rgb(255,159,85);
+  background: linear-gradient(145deg, rgba(255,159,85,1) 0%, rgba(255,210,85,1) 100%);
+}

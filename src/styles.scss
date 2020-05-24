@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+// Import Partials
+
+@import "assets/style-components/variables";
+@import "assets/style-components/mixin";
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+
+  @media screen and (max-width:991px) {
+      font-size: 16px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-text;
+  font-size: 1rem;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  font-family: $font-primary;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+// Common Components
+
+@import "assets/style-components/common";
